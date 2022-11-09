@@ -17,12 +17,11 @@ class Bike
     @cargo_contents = []
   end
 
-  def rent_a_bike(id, color, price, weight)
+  def rent!(id, color, price)
     self.rented = true
     self.id = id
     self.color = color
     self.price = price
-    self.weight = weight
   end
 
   # def rent!
